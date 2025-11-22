@@ -6,7 +6,7 @@ module ImgROM (
     output logic [               15 : 0] data
 );
     logic [15:0] mem[0:320*240-1];
-
+  
     initial begin
         $readmemh("Lenna_320x240.mem", mem);
     end
